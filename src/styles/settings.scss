@@ -1,0 +1,64 @@
+@import '@/styles/colors.scss';
+@import '@/styles/fonts.scss';
+@import '@/styles/forms.scss';
+
+.bg- {
+  &primary {
+    background-color: $primary !important;
+  }
+}
+
+.relative {
+  position: relative;
+}
+
+.subcard {
+  border: 0.5px dotted $border;
+  border-radius: 6px;
+  padding: 12px;
+}
+
+.landing- {
+  &left {
+    background-image: url("@/assets/bg-masking.png");
+    background-size: cover;
+    align-items: center;
+
+    .title {
+      font-size: 32px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .title-black {
+      font-size: 26px;
+      font-weight: 600;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .footer {
+      position: fixed;
+      text-align: center;
+      bottom: 24px;
+      margin: auto;
+      width: 60%;
+    }
+  }
+
+  &right {
+    .title-black {
+      font-size: 26px;
+      font-weight: 600;
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 24px;
+    }
+  }
+}
